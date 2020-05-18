@@ -1,0 +1,6 @@
+<!--pages/index2/index2.wxml-->
+<text>出租车计价</text>
+<view wx:if="{{miale <= 3}}">10元</view>
+<view wx:elif="{{miale <= 10 && miale > 3}}">{{10 + (miale - 3)*2}}元</view>
+<view wx:else="{{miale > 10}}">{10 + (miale - 3)*2 +(miale - 10)*3}</view>
+

@@ -1,0 +1,8 @@
+<!--pages/dog/dog.wxml-->
+<text>年龄</text>
+<view wx:if="{{dogage<2}}">
+  {{dogage * 10.5}}
+</view>
+<view wx:if="{{dogage > 2}}">
+  {{2 * 10.5 + (dogage-2) * 4}}
+</view>

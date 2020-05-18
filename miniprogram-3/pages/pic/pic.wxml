@@ -1,0 +1,4 @@
+<!--pages/pic/pic.wxml-->
+<text>图片切换</text>
+<button bindtap="click">点击切换</button>
+<image src="{{img_url}}"></image>

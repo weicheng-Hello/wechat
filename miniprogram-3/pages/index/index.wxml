@@ -1,0 +1,6 @@
+<view class="nav">
+    <view class="item">拉取要求</view>
+    <view class="item">问题</view>
+    <view class="item">市场</view>
+    <view class="item">探索</view>
+</view>

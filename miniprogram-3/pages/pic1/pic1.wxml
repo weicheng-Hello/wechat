@@ -1,0 +1,8 @@
+<!--pages/pic1/pic1.wxml-->
+<text>显示图片</text>
+<image src="./image/b1.jpg" hidden="{{!flag}}"></image>
+<!-- 惰性 -->
+<image src="./image/b1.jpg" wx:if="{{flag}}"></image>
+
+<image src="./image/b3.jpg" hidden="{{flag}}"></image>
+<image src="./image/b3.jpg" wx:if="{{!flag}}"></image>
