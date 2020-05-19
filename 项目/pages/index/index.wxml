@@ -1,0 +1,25 @@
+<view class="nav">
+  <view class="input">搜索</view>
+</view>
+
+<view class="img-list">
+  <swiper
+indicator-dots="true"
+indicator-color="rgba(0,0,0,.3)"
+indicator-active-color="black"
+autoplay="flase"
+interval="3000"
+circular="true"
+
+>
+  <swiper-item  wx:for="{{img_arr}}" wx:key="src">
+   <image src="{{item.src}}" mode="scaleToFill"></image>
+  </swiper-item>
+  <!-- <swiper-item  mode="aspectFill">
+   <image src="http://www.linweiqin.cn/img/banner2.jpg"></image>
+  </swiper-item>
+  <swiper-item  mode="aspectFill">
+   <image src="http://www.linweiqin.cn/img/banner3.jpg"></image>
+  </swiper-item> -->
+</swiper>
+</view>
