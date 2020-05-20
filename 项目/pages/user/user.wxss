@@ -1,0 +1,77 @@
+view.apt_dl {
+  width: 100%;
+  height: 420rpx;
+  position: relative;
+  background-color: "#f9f9f9";
+}
+view.apt_dl view.bj {
+  width: 100%;
+  height: 400rpx;
+}
+view.apt_dl view.bj image {
+  width: 100%;
+  height: 400rpx;
+  filter: blur(28rpx);
+}
+view.apt_dl view.tx {
+  position: absolute;
+  top: 80rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200rpx;
+  height: 200rpx;
+}
+view.apt_dl view.tx image {
+  border-radius: 50%;
+}
+view.apt_dl view.userName {
+  position: absolute;
+  bottom: 70rpx;
+  left: 50%;
+}
+view.apt_dl button {
+  border: 1rpx solid red;
+  color: red;
+  position: absolute;
+  top: 150rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+view.chaxun {
+  display: flex;
+  margin: 20rpx 0;
+}
+view.chaxun view.con {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+view.chaxun view.con view.iconfont {
+  font-size: 50rpx;
+}
+view.chaxun view.con text {
+  font-size: 30rpx;
+}
+view.apt-my-systemFunc view.systemFunc-item {
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1rpx solid #ccc;
+}
+view.apt-my-systemFunc view.systemFunc-item view.left {
+  display: flex;
+  align-items: center;
+}
+view.apt-my-systemFunc view.systemFunc-item view.left view.iconfont {
+  margin-left: 20rpx;
+  font-size: 50rpx;
+}
+view.apt-my-systemFunc view.systemFunc-item view.left view.text {
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+view.apt-my-systemFunc view.systemFunc-item view.right {
+  margin-right: 20rpx;
+}

@@ -1,7 +1,8 @@
+<!-- 搜索框 -->
 <view class="nav">
-  <view class="input">搜索</view>
+  <navigator class="input" url="/pages/index1/index1" >搜索</navigator>
 </view>
-
+<!-- 轮播图 -->
 <view class="img-list">
   <swiper
 indicator-dots="true"
@@ -10,16 +11,26 @@ indicator-active-color="black"
 autoplay="flase"
 interval="3000"
 circular="true"
-
 >
-  <swiper-item  wx:for="{{img_arr}}" wx:key="src">
-   <image src="{{item.src}}" mode="scaleToFill"></image>
+  <swiper-item  wx:for="{{swiper_list}}" wx:key="image_src">
+   <image src="{{item.image_src}}"></image>
   </swiper-item>
-  <!-- <swiper-item  mode="aspectFill">
-   <image src="http://www.linweiqin.cn/img/banner2.jpg"></image>
-  </swiper-item>
-  <swiper-item  mode="aspectFill">
-   <image src="http://www.linweiqin.cn/img/banner3.jpg"></image>
-  </swiper-item> -->
 </swiper>
+</view>
+<!-- 导航栏 -->
+<view class="content">
+  <block wx:for="{{catItems}}" wx:key="image_src">
+  <image src="{{item.image_src}}"></image>
+  </block>
+</view>
+<!-- 商品分类 -->
+<view class="fl">
+  <block wx:for="{{floorData}}" wx:key="name">
+    <view class="apt_name">{{item.floor_title.name}}</view>
+    <view class=""apt_fl>
+      <navigator class="apt_nav" wx:for="{{item.product_list}}" wx:key="image_src">
+        <image src="{{item.image_src}}"></image>
+      </navigator>
+    </view>
+  </block>
 </view>
