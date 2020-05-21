@@ -1,28 +1,26 @@
-// pages/user/user.js
+// pages/fruit/fruit.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:{}
-  },
-  getUserInfoFunc:function(e){
-    console.log(e)
-    let userInfo = e.detail.userInfo
-    this.setData({
-      userInfo:userInfo
-    })
-    //缓存登录信息
-    wx.setStorageSync("userInfo", userInfo)
-  
+    fruitData:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
+  fn:function(){
+    let fruitData = require("../../pages/data/guowei")
+    this.setData({
+      fruitData:fruitData
+    })
+  },
   onLoad: function (options) {
-
+    this.fn()
+    console.log(this.data.fruitData)
   },
 
   /**
@@ -36,10 +34,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // 页面刷新重新获取用户信息
-    this.setData({
-      userInfo:wx.getStorageSync("userInfo")
-    })
+
   },
 
   /**

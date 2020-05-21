@@ -3,7 +3,7 @@
   <navigator class="input" url="/pages/index1/index1" >搜索</navigator>
 </view>
 <!-- 轮播图 -->
-<view class="img-list">
+<!-- <view class="img-list">
   <swiper
 indicator-dots="true"
 indicator-color="rgba(0,0,0,.3)"
@@ -16,15 +16,17 @@ circular="true"
    <image src="{{item.image_src}}"></image>
   </swiper-item>
 </swiper>
-</view>
+</view> -->
+<swiper_item swiper_list="{{swiper_list}}" />
 <!-- 导航栏 -->
-<view class="content">
+<!-- <view class="content">
   <block wx:for="{{catItems}}" wx:key="image_src">
   <image src="{{item.image_src}}"></image>
   </block>
-</view>
+</view> -->
+<view_nav catItems="{{catItems}}"/>
 <!-- 商品分类 -->
-<view class="fl">
+<!-- <view class="fl">
   <block wx:for="{{floorData}}" wx:key="name">
     <view class="apt_name">{{item.floor_title.name}}</view>
     <view class=""apt_fl>
@@ -33,4 +35,5 @@ circular="true"
       </navigator>
     </view>
   </block>
-</view>
+</view> -->
+<view_fl floorData="{{floorData}}"/>

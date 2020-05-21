@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/fenlei/fenlei",
+    "pages/index/index",
+    "pages/fruit/fruit",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ab946d",
+    "navigationBarTitleText": "零食商城",
+    "navigationBarTextStyle":"black"
+  },"tabBar": {
+    "color": "#000000",
+    "selectedColor": "#ab946d",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "./pages/image/home.png",
+      "selectedIconPath": "./pages/image/home-o.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "分类",
+      "iconPath": "./pages/image/category.png",
+      "selectedIconPath": "./pages/image/category-o.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "购物车",
+      "iconPath": "./pages/image/cart.png",
+      "selectedIconPath": "./pages/image/cart-o.png"
+    },{
+      "pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath": "./pages/image/my.png",
+      "selectedIconPath": "./pages/image/my-o.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

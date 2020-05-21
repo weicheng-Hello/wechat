@@ -1,23 +1,13 @@
-// pages/user/user.js
+// pages/fenlei/fenlei.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    userInfo:{}
+    Name:["果味","蔬菜","炒货","点心","粗茶","淡饭"]
   },
-  getUserInfoFunc:function(e){
-    console.log(e)
-    let userInfo = e.detail.userInfo
-    this.setData({
-      userInfo:userInfo
-    })
-    //缓存登录信息
-    wx.setStorageSync("userInfo", userInfo)
   
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
@@ -36,10 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    // 页面刷新重新获取用户信息
-    this.setData({
-      userInfo:wx.getStorageSync("userInfo")
-    })
+
   },
 
   /**

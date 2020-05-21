@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view class="shopping">
+  <view class="lunbotu">
+    <swiper
+    indicator-dots="true"
+    indicator-color="rgb(0,0,0,.3)"
+    indicator-active-color="black"
+    autoplay="true"
+    interval="3000"
+    circular="true"
+    >
+      <swiper-item wx:for="{{swiper_list}}" wx:key="image_src">
+        <image src="{{item.image_src}}" mode="aspectFill"></image>
+      </swiper-item>
+      <!-- <swiper-item>
+        <image src="../image/b2.jpg" mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../image/b3.jpg" mode="aspectFill"></image>
+      </swiper-item> -->
+    </swiper>
+  </view>
+  <block wx:for="{{jxz}}" wx:key="name">
+    <view class="content">{{item.floor_title.name}}</view>
+    <view class="jx" >
+    <block wx:for="{{item.photo}}" wx:key="imageUrl">
+        <navigator class="zt" src="{{item.imageUrl}}" url="/pages/fruit/fruit" open-type="navigate"> 
+        <image class="img" src="{{item.imageUrl}}"></image>
+      </navigator> 
+        </block>
+    </view>
+  </block>
+    <!-- <view class="zhuti">
+      <view class="first">
+        <navigator>
+        <image src="../image/s1.png"></image>
+      </navigator>  
+      <navigator>
+        <image src="../image/s2.png"></image>
+      </navigator>  
+      </view>
+      <navigator class="second">
+        <image src="../image/s3.png"></image>
+      </navigator>  
+    </view> -->
+    <view class="newest">
+      <block  wx:for="{{module_exports}}" wx:key="name">
+        <view class="biaoti">{{item.floor_title.name}}</view>
+      <view class="newest1">
+      <block >
+          <navigator class="xp" wx:for="{{item.module_export}}" wx:key="imageUrl">
+        <image class="imgname" src="{{item.imageUrl}}"></image>
+          <view class="name">{{item.title}} {{item.count}} {{item.unit}}</view>
+          <view class="price">￥{{item.price}}</view>
+        </navigator>
+      </block>
+    </view>
+      </block>
+    </view>
+</view>

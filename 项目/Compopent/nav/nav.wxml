@@ -1,0 +1,6 @@
+<!--Compopent/nav/nav.wxml-->
+<view class="content">
+  <block wx:for="{{catItems}}" wx:key="image_src">
+  <image src="{{item.image_src}}"></image>
+  </block>
+</view>

@@ -1,0 +1,10 @@
+<view class="fl">
+  <block wx:for="{{floorData}}" wx:key="name">
+    <view class="apt_name">{{item.floor_title.name}}</view>
+    <view class=""apt_fl>
+      <navigator class="apt_nav" wx:for="{{item.product_list}}" wx:key="image_src">
+        <image src="{{item.image_src}}"></image>
+      </navigator>
+    </view>
+  </block>
+</view>

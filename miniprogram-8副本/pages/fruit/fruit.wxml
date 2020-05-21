@@ -1,0 +1,16 @@
+<view class="banner">
+  <block wx:for="{{fruitData.bannerList}}" wx:key="bannerList">
+    <image src="{{item}}"></image>
+  </block>
+</view>
+<view class="fruit_list"> 
+<block wx:for="{{fruitData.shopList}}" wx:key="imageUrl">
+  <navigator class="xp"  >
+    <image class="imgname" src="{{item.imageUrl}}" wx:key="imageUrl"></image>
+    <view class="name">{{item.title}} {{item.count}} {{item.unit}}</view>
+    <view class="price">￥{{item.price}}</view>
+  </navigator>
+</block>
+</view>
+
+

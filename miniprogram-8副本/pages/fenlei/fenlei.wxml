@@ -1,0 +1,10 @@
+
+<view class="content">
+<view class="left" >
+<block wx:for="{{Name}}" wx:key="item">
+  <view class="content_list">{{item}}</view>
+</block>
+</view>
+<view class="right">
+</view>
+</view>

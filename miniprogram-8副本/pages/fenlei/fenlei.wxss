@@ -1,0 +1,9 @@
+view.content view.left {
+  width: 20%;
+  border-left: 1rpx solid gray;
+  display: flex;
+  flex-wrap: wrap;
+}
+view.content view.left view.content_list {
+  width: 50rpx;
+}

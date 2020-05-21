@@ -1,0 +1,15 @@
+<!--Compopent/swiper/swiper.wxml-->
+<view class="img-list">
+  <swiper
+indicator-dots="true"
+indicator-color="rgba(0,0,0,.3)"
+indicator-active-color="black"
+autoplay="flase"
+interval="3000"
+circular="true"
+>
+  <swiper-item  wx:for="{{swiper_list}}" wx:key="image_src">
+   <image src="{{item.image_src}}"></image>
+  </swiper-item>
+</swiper>
+</view>

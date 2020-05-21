@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "swiper_item":"/Compopent/swiper/swiper",
+    "view_nav":"/Compopent/nav/nav",
+    "view_fl":"/Compopent/fenlei/fenlei"
+
+  }
 }
